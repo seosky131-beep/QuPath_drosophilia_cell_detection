@@ -14,7 +14,7 @@ setPixelSizeMicrons(0.1424, 0.1424)
 // → 이미지 metadata가 깨져도 area 파라미터가 정상 작동하게 하는 보험
 
 // ---------- 1. 모델 파일 확인 ----------
-def modelPath = "C:/Users/seosk/Downloads/dsb2018_heavy_augment.pb"
+def modelPath = "C:/.../dsb2018_heavy_augment.pb" //이 부분 개인 수정해야 함. ... 부분을 본인 path로 바꾸자. 예: "C:Users/QuPath/dsb2018_heavy_augment.pb"
 def modelFile = new File(modelPath)
 if (!modelFile.exists()) {
     println "Error: 모델 파일을 찾을 수 없습니다: " + modelPath
